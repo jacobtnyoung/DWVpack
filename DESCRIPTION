@@ -1,16 +1,16 @@
 Package: DWVpack
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Authors@R: c(
-    person(
-      "Jane", "Doe",
-      email = "jane@example.com",
-      role = c("aut", "cre")
-    )
-  )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
+Title: Data Wrangingling and Visualization
+Version: 1.1.0
+Author: Jacob T.N. Young
+Maintainer: Jacob T.N. Young <jacob.young.1@asu.edu>
+Description: A collection of open-source data files used in a Data Wrangling and Visualization course.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports:
+    tidyverse,
+    ggplot2
+RoxygenNote: 7.3.3
+Depends: 
+    R (>= 3.5)
