@@ -36,6 +36,6 @@ dat <- dat |>
 # ----
 # Save
 
-phx_uof_2018_2024 <- dat
+phx_uof <- dat
 
-usethis::use_data( phx_uof_2018_2024, overwrite = TRUE )
+use_data( phx_uof, overwrite = TRUE )
