@@ -89,6 +89,11 @@ dat_tidy <-
   dat_tidy %>%
   filter( year != 2015 )
 
+# drop cases from 2025 (these are dropped because the 2025 cases end in September)
+dat_tidy <-
+  dat_tidy %>%
+  filter( year != 2025 )
+
 
 # ------------------------------ #
 # ----
