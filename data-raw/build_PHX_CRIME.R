@@ -66,11 +66,7 @@ dat_tidy <- dat |>
     # Create components
     year  = year( datetime ),
     month = month( datetime, label = TRUE, abbr = FALSE ),
-    day   = day( datetime ),
-
-    # Optional extras matching your old code
-    day365 = yday( datetime ),
-    hour   = hour( datetime )
+    day   = day( datetime )
   )
 
 # clean up the variable classifying the cases
