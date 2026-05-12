@@ -2,7 +2,7 @@
 
 ## *Data Wrangling and Visualization*
 
-![](man/figures/SNACpack_sticker.png){width=25%}
+![](man/figures/DWVpack_sticker.png){width=25%}
 
 <br>
 

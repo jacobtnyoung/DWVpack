@@ -65,7 +65,7 @@ dat_tidy <- dat |>
 
     # Create components
     year  = year( datetime ),
-    month_abb = month( datetime, label = TRUE, abbr = TRUE ),
+    month = month( datetime, label = TRUE, abbr = TRUE ),
     day   = day( datetime )
   )
 
