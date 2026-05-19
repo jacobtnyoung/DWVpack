@@ -14,3 +14,4 @@ library( here )
 
 source( here( "data-raw/build_PHX_CRIME.R" ) )
 source( here( "data-raw/build_PHX_UOF.R" ) )
+source( here( "data-raw/build_TUCSON_BICYLE.R" ) )
