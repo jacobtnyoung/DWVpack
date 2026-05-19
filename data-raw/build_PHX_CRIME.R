@@ -51,7 +51,7 @@ dat <- dat |>
 
 # ------------------------------ #
 # ----
-# Create tidy version of phoenix data
+# Create tidy version
 
 # clean up the dates and times
 dat_tidy <- dat |>

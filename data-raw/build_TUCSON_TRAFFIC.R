@@ -40,7 +40,7 @@ dat <- dat |>
 
 # ------------------------------ #
 # ----
-# Create tidy version of tucson bicycle data
+# Create tidy version
 
 # clean up the dates and times
 dat_tidy <- dat |>

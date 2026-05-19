@@ -8,3 +8,4 @@ docs
 # Raw data files to exclude from repo due to size
 data-raw/data-raw-files/tucson-traffic-raw.csv
 data-raw/data-raw-files/tucson-bicycle-raw.csv
+data-raw/data-raw-files/tempe-hate-raw.csv
