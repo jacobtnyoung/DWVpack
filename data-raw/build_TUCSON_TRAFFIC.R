@@ -33,8 +33,8 @@ dat <- dat |>
     injury = InjuryTotal,
     lighting = LightConditionDescription,
     weather = WeatherDescription,
-    x_coord = GeoX,
-    y_coord = GeoY
+    x_cord = GeoX,
+    y_cord = GeoY
     )
 
 

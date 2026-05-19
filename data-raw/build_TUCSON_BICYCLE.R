@@ -30,8 +30,8 @@ dat <- dat |>
     time_date = AccidentDateTime,
     fatal = WasFatal,
     injury = InjuryTotal,
-    x_coord = GeoX,
-    y_coord = GeoY
+    x_cord = GeoX,
+    y_cord = GeoY
     )
 
 
@@ -54,6 +54,11 @@ dat_tidy <- dat |>
     month = month( datetime, label = TRUE, abbr = TRUE ),
     day   = day( datetime )
   )
+
+# remove a case that has a bad x/y coordinate
+dat_tidy <- dat_tidy |>
+  filter( !( x_cord == 0 & y_cord == 0 ) )
+
 
 
 # ------------------------------ #
