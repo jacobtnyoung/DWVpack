@@ -32,6 +32,17 @@ dat <- dat |>
     affiliation = Victim.s.Sectarian.Affiliation
     )
 
+# make the lat and lon numeric
+dat <- dat |>
+  mutate(
+    lat = as.numeric( lat ),
+    lon = as.numeric( lon )
+  ) |>
+  filter(
+    !is.na( lon ),
+    !is.na( lat )
+  )
+
 
 # clean up the affiliation variable
 
