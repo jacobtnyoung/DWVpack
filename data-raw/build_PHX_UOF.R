@@ -7,8 +7,9 @@
 
 rm( list = ls() )
 
-library( dplyr )
-library( usethis )
+# load libraries needed
+library( here )
+source( here( "data-raw/libraries.R" ) )
 
 url <- paste(
   "https://www.phoenixopendata.com/dataset/7df8d71f-82d5-47c3-8b08-9dfaa76c2bc0/resource/",

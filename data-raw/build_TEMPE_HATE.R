@@ -7,12 +7,9 @@
 
 rm( list = ls() )
 
-library( dplyr )
-library( usethis )
-library( lubridate )
-library( stringr )
+# load libraries needed
 library( here )
-
+source( here( "data-raw/libraries.R" ) )
 
 path <- here( "data-raw/data-raw-files/tempe-hate-raw.csv" )
 
