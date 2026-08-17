@@ -70,6 +70,19 @@ dat <- dat |>
   )
 
 
+# clean up the typos for sex
+dat <- dat |>
+  mutate(
+    sex = case_when(
+      sex == "Male" ~ "male",
+      sex == "Male " ~ "male",
+      sex == "Female" ~ "female",
+      sex == "Femal" ~ "female",
+      TRUE ~ sex
+    )
+  )
+
+
 # ------------------------------ #
 # ----
 # Save
