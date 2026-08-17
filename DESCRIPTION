@@ -11,6 +11,6 @@ LazyData: true
 Imports:
     tidyverse,
     ggplot2
-RoxygenNote: 7.3.3
 Depends: 
     R (>= 3.5)
+Config/roxygen2/version: 8.0.0

@@ -21,7 +21,6 @@ dat <- read.csv( path, as.is = TRUE, header = TRUE, stringsAsFactors = FALSE )
 # Cleanup
 
 # change variable names and select what you want
-
 dat <- dat |>
   select(
     id = Event.Number,
@@ -45,7 +44,6 @@ dat <- dat |>
 
 
 # clean up the affiliation variable
-
 dat <- dat |>
   mutate(
     affiliation = case_when(
@@ -59,6 +57,16 @@ dat <- dat |>
       affiliation == "Unknown" ~ "Other/Unknown",
       TRUE ~ affiliation
     )
+  )
+
+
+# make age numeric
+dat <- dat |>
+  mutate(
+    age = as.numeric( age )
+  ) |>
+  filter(
+    !is.na( age )
   )
 
 
